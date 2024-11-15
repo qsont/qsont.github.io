@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* All mainbar-related (navigation bar) elements*/
+
+.mainbar {
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 8vh;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+}
+
+.mainbar-buttons /* ul */ {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.mainbar-buttons li {
+    align-items: center;
+}
+
+.mainbar-buttons li a {
+    display: inline-block;
+    padding: 2.5vh 4vh;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+/* 
+    All elements below are part of the main content (div.screen) 
+*/
+
+#screen {
+    display: flex;
+    flex-direction: row;
+}
+
+/* The progress element on the left*/
+
+#prog-box {
+    grid-column: 1 / span 1;
+    margin: 2em;
+    padding: 1em;
+    border: 1px solid rgba(145, 145, 145, 0.5);
+    border-radius: 1em;
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px 8px hsla(0, 0%, 15%, 0.205);
+}
+
+#prog-box > p {
+    margin: 0em;
+    line-height: 1.6;
+}
+
+#prog {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 1em 0px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(220, 0, 0) 3.6deg, hsl(0, 0%, 92%) 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prog::before {
+    content: "";
+    position: absolute;
+    height: 168px;
+    width: 168px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#prog-val {
+    position: relative;
+    color: rgb(87, 94, 86);
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 3em;
+    
+}
+
+/* The list of activities */
+
+#acts-container {
+    grid-column: 2 / span 1;
+    margin: 2em;
+    padding: 1em;
+}
+
+#acts-container > p {
+    font-size: 35px;
+    font-weight: 750;
+    margin: 0px;
+}
+
+#acts-container ul {
+    list-style: none;
+}
+
+#acts-container ul li > a {
+    display: inline-block;
+    width: 750px;
+    text-decoration: none;
+    background-color: rgb(145, 186, 240);
+    margin: 1em 0px;
+    color: black;
+    font-weight: 600;
+    border-radius: 1em;
+}
+
+#acts-container div {
+    width: inherit;
+    border-radius: inherit;
+    padding: 50px;
+    font-size: 20px;
+}
