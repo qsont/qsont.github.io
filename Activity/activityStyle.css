@@ -1,0 +1,303 @@
+* {
+    font-family: 'Nunito', 'Segoe UI', system-ui;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFB562;
+}
+
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    background-color: whitesmoke;
+    width: 50%;
+    min-width: 600px;
+    margin: 0 auto 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 40px 8px hsla(0, 0%, 15%, 0.209);
+    padding: 10px 20px;
+}
+
+#top-bar > div {
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#top-bar #title {
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    padding: 0 5vw;
+}
+
+.common-btn {
+    background-color: #F87474;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    border-style: none;
+    padding: 8px 15px;
+    width: auto;
+}
+
+#screen-shade {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.751);
+
+}
+
+#options {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+#options > h2 {
+    text-align: center;
+    margin: 25px;
+    font-size: 40px;
+}
+
+#options > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#options > div button {
+    font-size: 20px;
+    margin-bottom: 25px;
+    padding: 10px 25px;
+}
+
+#confirmation-box {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+#confirmation-msg {
+    margin: 20px auto 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#confirm-btn-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#confirmation-box #confirm-btn-layout > button {
+    background-color: #F87474;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 4px;
+    border-style: none;
+    margin: 0 20px 20px;
+    padding: 10px 25px;
+    width: auto;
+}
+
+#quiz-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 40px 8px hsla(0, 0%, 15%, 0.209);
+    width: 50%;
+    min-width: 600px;
+    margin: 40px auto 0;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+#instructions {
+    margin: 10px;
+    font-size: 22px;
+}
+
+#pic {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+#fillBlank {
+    margin: 12px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 85%;
+    height: 9em;
+    margin-bottom: 12px;
+}
+
+.btn {
+    flex: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+
+.btn:nth-child(1):not([disabled]) {
+    background-color: #EB5353;
+    cursor: pointer;
+}
+
+.btn:nth-child(2):not([disabled]) {
+    background-color: #eccd1f;
+    cursor: pointer;
+}
+
+.btn:nth-child(3):not([disabled]) {
+    background-color: #36AE7C;
+    cursor: pointer;
+}
+
+.btn:nth-child(4):not([disabled]) {
+    background-color: #187498;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    cursor: pointer;
+}
+
+.correct-choice {
+    background-color: rgba(154, 234, 189, 0.5);
+    border: 2px solid rgb(110, 223, 159);
+    color: #36AE7C;
+}
+
+.incorrect-choice {
+    background-color: rgba(234, 154, 154, 0.525);
+    border: 2px solid rgb(209, 125, 125);
+    color: #EB5353;
+}
+
+.quiz-btn {
+    background-color: #187498;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    border-style: none;
+    margin: 5px 0;
+    padding: 1.5% 10%;
+    width: auto;
+}
+
+#textbox{
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1.25em;
+    margin: 25px 0 15px;
+    padding: 10px;
+    width: 50%;
+}
+
+#textbox:focus {
+    box-shadow: 0 0 0 2px #0055ffcc;
+    border: 2px solid #0055ffcc;
+}
+
+.correct-textBox {
+    background-color: rgba(154, 234, 189, 0.5);
+    border: 2px solid rgb(110, 223, 159);
+    transition: 0.3s;
+}
+
+.incorrect-textBox {
+    background-color: rgba(234, 154, 154, 0.525);
+    border: 2px solid rgb(209, 125, 125);
+    transition: 0.3s;
+}
+
+#correctText {
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 1.25em;
+    margin: 15px;
+    padding: 10px;
+    width: 50%;
+}
+
+#result {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+
+#result > * {
+    margin: 20px;
+}
+
+#result > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#result > h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+#result-pic {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+}
+
+#result #final-score {
+    font-size: 20px;
+}
