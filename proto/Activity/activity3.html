@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+    <link rel="stylesheet" href="activityStyle.css">
+</head>
+<body>
+    
+    <div id="screen-shade">
+        <div id="options">
+            <h2>Options</h2>
+            <div>
+                <button id="continue" class="common-btn">Continue</button>
+                <button id="restart" class="common-btn">Restart</button>
+                <button id="quit" class="common-btn">Back to Activities</button>
+            </div>
+        </div>
+        <div id="confirmation-box">
+            <p id="confirmation-msg">.</p>
+            <div id="confirm-btn-layout">
+                <button id="yes-btn">Yes</button>
+                <button id="no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="top-bar">
+        <div>
+            <button id="options-btn" class="common-btn">Options</button>
+        </div>
+        <div id="title">
+            <span id="lesson">Activity 3</span>
+        </div>
+        <div>
+            <p>Item <span id="item-no"></span> of <span id="total-questions"></span></p> 
+        </div>
+
+    </div>
+
+        <div id="quiz-box">
+            <img id="pic">
+            <button id="next-btn" class="quiz-btn">Next</button>
+        </div>
+
+    <form id="quiz">
+        <div id="result">
+            <h3>Congratulations!</h3>
+            <div>
+                <img id="result-pic" src="./imgs/complete.jpg">
+                <p id="final-score">.</p>
+                <button id="goHome" class="common-btn" type="submit">Back to Assessments</button>
+            </div>
+        </div>
+    </form>
+
+    <script type="module">
+        import {start, resetState, showQuestion, selectAnswer, nextBtnHandler, 
+            displayResult, score, activityFinished, items, totalQuestions, quiz} from './activityProto.js';
+
+            const response = await fetch("./JSON/act3.json");
+                if (!response.ok){
+                    throw new Error(`HTTP Error ${response.status}`);
+                }
+                let temp = await response.json();
+                temp.forEach(content => {
+                    items.push(content);
+                });
+
+        const actNo = 3;
+
+        start();
+
+        quiz.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            let data = JSON.parse(localStorage.getItem("data"));
+
+            if (data[actNo-1].score < score) {
+                data[actNo-1].score = String(score);
+            }
+            
+            data[actNo-1].total = totalQuestions.innerText;
+            data[actNo-1].completed = true;
+            localStorage.setItem("data", JSON.stringify(data));
+                
+            document.location.href = "../index.html";
+        });
+    </script>
+</body>
+</html>
