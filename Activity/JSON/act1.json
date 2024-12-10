@@ -1,0 +1,92 @@
+[
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act1/1.jpg",
+        "q": "M",
+        "correct": "ama",
+        "incorrect": ["asa", "amas", "am"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act1/2.jpg",
+        "q": "S",
+        "correct": "abon",
+        "incorrect": ["opas", "amig", "uman"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act1/3.jpg",
+        "q": "Ma",
+        "correct": "rtilyo",
+        "incorrect": ["nika", "racas", "leta"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act1/4.jpg",
+        "q": "A",
+        "correct": "klat",
+        "incorrect": ["basa", "ral", "yos"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act1/5.jpg",
+        "q": "A",
+        "correct": "lon",
+        "incorrect": ["gsa", "poy", "lom"]
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act1/6.jpg",
+        "correct": "sapatos"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act1/7.jpg",
+        "correct": "mangga"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act1/8.jpg",
+        "correct": "isda"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act1/9.jpg",
+        "correct": "singsing"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act1/10.jpg",
+        "correct": "mikropono"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m1.png",
+        "audio": "./audio/Act1/11.mp3",
+        "correct": "saklay"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f1.png",
+        "audio": "./audio/Act1/12.mp3",
+        "correct": "araw"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m2.png",
+        "audio": "./audio/Act1/13.mp3",
+        "correct": "magsasaka"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f2.png",
+        "audio": "./audio/Act1/14.mp3",
+        "correct": "agila"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m3.png",
+        "audio": "./audio/Act1/15.mp3",
+        "correct": "sumbrero"
+    }
+]

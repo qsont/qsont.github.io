@@ -1,0 +1,92 @@
+[
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act2/1.jpg",
+        "q": "M",
+        "correct": "odista",
+        "incorrect": ["adista", "otorista", "obista"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act2/2.jpg",
+        "q": "E",
+        "correct": "ksperto",
+        "incorrect": ["ditor", "spesyal", "nerhiya"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act2/3.jpg",
+        "q": "O",
+        "correct": "so",
+        "incorrect": ["to", "ko", "ba"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act2/4.jpg",
+        "q": "U",
+        "correct": "sok",
+        "incorrect": ["so", "ko", "bo"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act2/5.jpg",
+        "q": "Su",
+        "correct": "pil",
+        "incorrect": ["pin", "pi", "til"]
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act2/6.jpg",
+        "correct": "unan"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act2/7.jpg",
+        "correct": "eroplano"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act2/8.jpg",
+        "correct": "ospital"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act2/9.jpg",
+        "correct": "susi"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act2/10.jpg",
+        "correct": "medyas"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f1.png",
+        "audio": "./audio/Act2/11.mp3",
+        "correct": "suklay"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m2.png",
+        "audio": "./audio/Act2/12.mp3",
+        "correct": "embutido"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f3.png",
+        "audio": "./audio/Act2/13.mp3",
+        "correct": "metro"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m2.png",
+        "audio": "./audio/Act2/14.mp3",
+        "correct": "unggoy"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f2.png",
+        "audio": "./audio/Act2/15.mp3",
+        "correct": "sobrekama"
+    }
+]
