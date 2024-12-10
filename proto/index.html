@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="mainbar">
+        <!-- NO, CHANGE THIS STYLE ATTRIBUTE ON THE DIV TAG-->
+        <div style="color: aliceblue; height: inherit;">
+            LOGO
+        </div>
+        <ul class="mainbar-buttons">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#lessons">Lessons</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div id="screen">
+
+        <!--PRIORITIZE THIS-->
+        <div id="prog-box">
+            <div id="prog">
+                <span id="prog-val">0%</span>
+            </div>
+            <div id="prog-labels">
+                <p id="completed"></p>
+                <p id="pending"></p>
+            </div>
+        </div>
+
+        <div id="acts-container">
+            <p>Activities</p>
+            <ul id="list">
+                <!-- Items will be generated here through list.js -->
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="./HomeScripts/progress.js"></script>
+    <script type="module" src="./HomeScripts/list.js"></script>
+</body>
+</html>
