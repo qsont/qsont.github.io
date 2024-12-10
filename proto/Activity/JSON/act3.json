@@ -1,0 +1,92 @@
+[
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act3/1.jpg",
+        "q": "Bu",
+        "correct": "ndok",
+        "incorrect": ["not", "nong", "ntot"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act3/2.jpg",
+        "q": "Te",
+        "correct": "atro",
+        "incorrect": ["lebisyon", "resa", "rminal"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act3/3.jpg",
+        "q": "Ku",
+        "correct": "neho",
+        "incorrect": ["lay", "mot", "sina"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act3/4.jpg",
+        "q": "To",
+        "correct": "rotot",
+        "incorrect": ["rombon", "rompeta", "no"]
+    },
+    {
+        "type": "multiple",
+        "pic": "./imgs/Act3/5.jpg",
+        "q": "Ka",
+        "correct": "matis",
+        "incorrect": ["mbing", "rne", "sim"]
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act3/6.jpg",
+        "correct": "kendi"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act3/7.jpg",
+        "correct": "kuko"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act3/8.jpg",
+        "correct": "bubuyog"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act3/9.jpg",
+        "correct": "tulay"
+    },
+    {
+        "type": "identify",
+        "pic": "./imgs/Act3/10.jpg",
+        "correct": "bomba"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m5.png",
+        "audio": "./audio/Act3/11.mp3",
+        "correct": "tokador"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f2.png",
+        "audio": "./audio/Act3/12.mp3",
+        "correct": "kopra"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/m4.png",
+        "audio": "./audio/Act3/13.mp3",
+        "correct": "kinakalabit"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f3.png",
+        "audio": "./audio/Act3/14.mp3",
+        "correct": "bestida"
+    },
+    {
+        "type": "audio",
+        "pic": "./imgs/Speakers/f1.png",
+        "audio": "./audio/Act3/15.mp3",
+        "correct": "takuri"
+    }
+]
